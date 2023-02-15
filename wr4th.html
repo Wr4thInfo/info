@@ -1,7 +1,8 @@
-<html>
+<html lang="tr">
 <head>
-	<link rel="icon" href="icon.png" type="x-icon"/>
+    <meta charset="UTF-8">
 	<title>Wr4th Kimdir?</title>
+	<link rel="icon" href="icon.png" type="x-icon"/>
 	<style>
 	    .btn{
 		margin: 5px 5px;
@@ -102,8 +103,9 @@
    function copyEvent(id)
    {
    var str = document.getElementById(id);
-   alert("Kopyalandı!");
+   window.getSelection().selectAllChildren(str);
    document.execCommand("Copy")
+   alert("Kopyalandı!");
    }
     </script>
 	
