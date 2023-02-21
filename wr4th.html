@@ -1,6 +1,6 @@
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
 	<title>Wr4th Kimdir?</title>
 	<link rel="icon" href="icon.png" type="x-icon"/>
 	<style>
@@ -13,7 +13,8 @@
 		font-family: "Verdana";
 		}
 		.btn1{
-		margin-left: 555;
+		margin: 0 auto;
+		display: block;
 		border: 2px solid #191919;
 		opacity: 0.8;
 		background-color: #303030;
@@ -27,30 +28,35 @@
         * {
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
+			text-align: center;
 			color: #cccccc;
 			background: transparent;
+			font-family: "Verdana";
 		}
 		
 		html, body {
-			height: 100%;
+		    max-height:1200px;
+			max-width: 1200px;
+			margin: 0px auto;
 		}
 
 		body {
+			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			background: #252525;
 		}
 
 		#dc {
-		opacity: 0.8;
+			opacity: 0.8;
 		    border: 3px solid #191919;
-			width: 260px; 
+			width: 300px; 
 			display: flex;
-			margin-left: 500px;
 			background: #303030;
 			border-radius: 35px;
-			padding: 10px 25px;
-			font-family: "Verdana";
+			padding: 20px 35px;
 			align-items: center;
 		}
 		#dc:hover{
@@ -59,42 +65,33 @@
 		}
 
 		#dc-pp {
-		margin: 10px 20px 10px 10px;
+			margin: auto;
 			border-radius: 100px;
 		}
 		#dc-nick {
-		    margin-right: 15px;
-		    display: inline-block;
+			margin: auto;
 			font-size: 20px;
 		}
 		#dc-nick-copy {
-		margin: 5px;
+			margin: 5px auto;
 		}
 		
 		#about {
-		margin-left: 562px;
-		margin-bottom: 5px;
-		font-family: "Verdana";
-		color: #D8D8D8;
+			margin-bottom: 5px;
+			color: #D8D8D8;
 		}
 		#about2 {
-		margin-left: 400px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		font-family: "Verdana";
-		color: #D8D8D8;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: #D8D8D8;
 		}
 		#about3 {
-		margin-left: 400px;
-		font-size: 17px;
-		font-family: "Verdana";
-		color: #D8D8D8;
+			font-size: 17px;
+			color: #D8D8D8;
 		}
 		#about4 {
-		margin-left: 545px;
-		margin-bottom: 5px;
-		font-family: "Verdana";
-		color: #D8D8D8;
+			margin-bottom: 5px auto;
+			color: #D8D8D8;
 		}
 		
 	</style>
@@ -149,6 +146,7 @@
 	<a href="https://discord.gg/6Q9bz7W9QP" class="btn btn1">TGT Discord </a> 
 	<br>
 	<h2>E-Posta Adresim: Alyx01111000@protonmail.com</h2>
+	<br>
 </body>	
 </html>
 
