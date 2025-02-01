@@ -1,154 +1,154 @@
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-   <meta charset="UTF-8">
-	<title>Wr4th Kimdir?</title>
-	<link rel="icon" href="icon.png" type="x-icon"/>
-	<style>
-	    .btn{
-		margin: 5px 5px;
-		text-decoration: none;
-		font-size: 18px;
-		display: inline-block;
-		padding:  15px 30px;
-		font-family: "Verdana";
-		}
-		.btn1{
-		margin: 0 auto;
-		display: block;
-		border: 2px solid #191919;
-		opacity: 0.8;
-		background-color: #303030;
-		border-radius: 25px;
-		}
-		.btn1:hover{
-		border: 2px solid #202020;
-		opacity: 1;
-		}
-		
+    <meta charset="UTF-8">
+    <title>Wr4th Kimdir?</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        .btn {
+            margin: 5px 5px;
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px 30px;
+            font-family: "Verdana";
+        }
+        .btn1 {
+            margin: 0 auto;
+            display: block;
+            border: 2px solid #191919;
+            opacity: 0.8;
+            background-color: #303030;
+            border-radius: 25px;
+        }
+        .btn1:hover {
+            border: 2px solid #202020;
+            opacity: 1;
+        }
+
         * {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			text-align: center;
-			color: #cccccc;
-			background: transparent;
-			font-family: "Verdana";
-		}
-		
-		html, body {
-			margin: 0px auto;
-		}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: #cccccc;
+            background: transparent;
+            font-family: "Verdana";
+        }
 
-		body {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			background: #252525;
-		}
+        html, body {
+            margin: 0 auto;
+        }
 
-		#dc {
-			opacity: 0.8;
-		    border: 3px solid #191919;
-			width: 300px; 
-			display: flex;
-			background: #303030;
-			border-radius: 35px;
-			padding: 20px 35px;
-			align-items: center;
-		}
-		#dc:hover{
-		border: 3px solid #202020;
-		opacity: 1;
-		}
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #252525;
+        }
 
-		#dc-pp {
-			margin: auto;
-			border-radius: 100px;
-		}
-		#dc-nick {
-			margin: 3px auto;
-			font-size: 20px;
-		}
-		#dc-nick-copy {
-			margin: 5px auto;
-		}
-		
-		#about {
-			margin-bottom: 5px;
-			color: #D8D8D8;
-		}
-		#about2 {
-			margin-top: 10px;
-			margin-bottom: 10px;
-			color: #D8D8D8;
-		}
-		#about3 {
-			font-size: 17px;
-			color: #D8D8D8;
-		}
-		#about4 {
-			margin-bottom: 5px auto;
-			color: #D8D8D8;
-		}
-		
-	</style>
-	
-	<script>
-   function copyEvent(id)
-   {
-   var str = document.getElementById(id);
-   window.getSelection().selectAllChildren(str);
-   document.execCommand("Copy")
-   alert("Kopyalandı!");
-   }
-    </script> 
+        #dc {
+            opacity: 0.8;
+            border: 3px solid #191919;
+            width: 300px;
+            display: flex;
+            background: #303030;
+            border-radius: 35px;
+            padding: 20px 35px;
+            align-items: center;
+        }
+        #dc:hover {
+            border: 3px solid #202020;
+            opacity: 1;
+        }
+
+        #dc-pp {
+            margin: auto;
+            border-radius: 100px;
+        }
+        #dc-nick {
+            margin: 3px auto;
+            font-size: 20px;
+        }
+        #dc-nick-copy {
+            margin: 5px auto;
+            cursor: pointer;
+        }
+
+        #about, #about2, #about3, #about4 {
+            color: #D8D8D8;
+        }
+        #about {
+            margin-bottom: 5px;
+        }
+        #about2 {
+            margin: 10px 0;
+        }
+        #about3 {
+            font-size: 17px;
+        }
+    </style>
+
+    <script>
+        function copyEvent(id) {
+            var text = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Kopyalandı!");
+            }).catch(err => {
+                console.error('Kopyalama hatası:', err);
+            });
+        }
+    </script>
 </head>
 <body>
+    <br><br>
+    <h2><strong id="about4">Discord Profilim:</strong></h2>
     <br>
-	<br>
-	<h2><strong id="about4">Discord Profilim:</strong></h2>
-	<br>
-	<iframe width="344" height="206" src="https://www.youtube.com/embed/-XDZw3v5T2U?si=S2RJQnGG5Qm1zLj8" frameborder="0" autoplay; allowfullscreen></iframe>
-	<br>
-	<div id="dc">
-    <img id="dc-pp" style="width: 65px; height: 65px;" src="wr4th.jpg" alt="Profil Fotoğrafı">
-	</div>
-		<div id="copy-nick"id="dc-nick">wr4th0</div>
-        <img id="dc-nick-copy" type="button" onclick="copyEvent('copy-nick')" src="https://i.hizliresim.com/r2jxr9s.png" width="20px" height="20px"/>
-	</div>
-	<br>
-	<br>
-	<h2><strong id="about2">Wr4th Kimdir?</strong></h2>
-	<br>
-	<h4 id="about2" >Merhaba! Ben Wr4th, Nâmı Diğer Alyx.</h4>
-	<br>
-        <h4 id="about2" >TGT Forum Adında Bir Forum Sitem Var.</h4> 
-	<h4 id="about2" >Cyber Security Alanında 4 yıl Boyunca Pentesterlik Yaptım.</h4> 
-	<h4 id="about2" >Programlama ve Roblox'da Oyun Geliştirme Üzerinde Çalışıyorum.</h4>
-	<h4 id="about2" >Bildiğim Kodlama Dilleri: Python, C++, C#, HTML5, PHP, JS, CSS, LUA.</h4>
-        <h4 id="about2" >Wr4th Games Adında Bir Oyun Stüdyom Var, Roblox'da Profesyonel Oyun Geliştiriyorum.</h4>
-	<h4 id="about2" >TurkishGuyTim'in Kurucusuyum.</h4>
-	<br>
-	<h3 id="about3">Bağlantılar;</h3>
-	<br>
-	<a href="https://discord.com/channels/@me/1190656208273686609" class="btn btn1">Discord (VPN Gerekir)</a> 
-	<a href="https://github.com/T5heAlyx" class="btn btn1">Github</a> 
-	<a href="https://www.instagram.com/thewr4th/" class="btn btn1">Instagram</a> 
-	<br>
-	<h3 id="about3" >Roblox Bağlantıları; (VPN Gerekir) </h3>
-	<br>
-	<a href="https://www.roblox.com/users/2421449140/profile" class="btn btn1">Roblox Profilim</a>
-	<a href="https://www.roblox.com/groups/15740139/Wr4th-Games#!/about" class="btn btn1">Roblox Grubum</a> 
-	<a href="https://discord.gg/HMeQ2ctr4n" class="btn btn1">Grup Discord Sunucum</a>
-	<br>
-	<h3 id="about3" >TurkishGuyTim Bağlantıları;</h3>
-	<br>
-	<a href="https://www.turkishguy.rf.gd" class="btn btn1">TGT Forum</a> 
-	<br>
-	<h3 id="about3" >Alakalı Diğer Linkler Yakında Eklenebilir.</h3>
-        <br>
-	<h2>İletişim E-Posta: Alyx01111000@protonmail.com</h2>
-	<br>
-</body>	
+    <iframe width="344" height="206" src="https://www.youtube.com/embed/-XDZw3v5T2U?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <br>
+    <div id="dc">
+        <img id="dc-pp" style="width: 65px; height: 65px;" src="wr4th.jpg" alt="Profil Fotoğrafı">
+    </div>
+    <div id="dc-nick">
+        <span id="copy-nick">wr4th0</span>
+        <img id="dc-nick-copy" onclick="copyEvent('copy-nick')" src="https://i.hizliresim.com/r2jxr9s.png" width="20px" height="20px" alt="Kopyala">
+    </div>
+    <br><br>
+
+    <h2><strong id="about2">Wr4th Kimdir?</strong></h2>
+    <br>
+    <h4 id="about2">Merhaba! Ben Wr4th, Nâmı Diğer Alyx.</h4>
+    <br>
+    <h4 id="about2">TGT Forum Adında Bir Forum Sitem Var.</h4> 
+    <h4 id="about2">Cyber Security Alanında 4 yıl Boyunca Pentesterlik Yaptım.</h4> 
+    <h4 id="about2">Programlama ve Roblox'da Oyun Geliştirme Üzerinde Çalışıyorum.</h4>
+    <h4 id="about2">Bildiğim Kodlama Dilleri: Python, C++, C#, HTML5, PHP, JS, CSS, LUA.</h4>
+    <h4 id="about2">Wr4th Games Adında Bir Oyun Stüdyom Var, Roblox'da Profesyonel Oyun Geliştiriyorum.</h4>
+    <h4 id="about2">TurkishGuyTim'in Kurucusuyum.</h4>
+    <br>
+
+    <h3 id="about3">Bağlantılar;</h3>
+    <br>
+    <a href="https://discord.com/channels/@me/1190656208273686609" class="btn btn1">Discord (VPN Gerekir)</a> 
+    <a href="https://github.com/T5heAlyx" class="btn btn1">Github</a> 
+    <a href="https://www.instagram.com/thewr4th/" class="btn btn1">Instagram</a> 
+    <br>
+
+    <h3 id="about3">Roblox Bağlantıları; (VPN Gerekir)</h3>
+    <br>
+    <a href="https://www.roblox.com/users/2421449140/profile" class="btn btn1">Roblox Profilim</a>
+    <a href="https://www.roblox.com/groups/15740139/Wr4th-Games#!/about" class="btn btn1">Roblox Grubum</a> 
+    <a href="https://discord.gg/HMeQ2ctr4n" class="btn btn1">Grup Discord Sunucum</a>
+    <br>
+
+    <h3 id="about3">TurkishGuyTim Bağlantıları;</h3>
+    <br>
+    <a href="https://www.turkishguy.rf.gd" class="btn btn1">TGT Forum</a> 
+    <br>
+    <h3 id="about3">Alakalı Diğer Linkler Yakında Eklenebilir.</h3>
+    <br>
+    <h2>İletişim E-Posta: Alyx01111000@protonmail.com</h2>
+    <br>
+</body>
 </html>
