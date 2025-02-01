@@ -48,31 +48,43 @@
             background: #252525;
         }
 
+        /* Profil kartını düzenleme */
         #dc {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             opacity: 0.8;
             border: 3px solid #191919;
-            width: 300px;
-            display: flex;
+            width: auto;
             background: #303030;
             border-radius: 35px;
-            padding: 20px 35px;
-            align-items: center;
+            padding: 10px 20px;
         }
         #dc:hover {
             border: 3px solid #202020;
             opacity: 1;
         }
 
+        /* Profil fotoğrafını düzenleme */
         #dc-pp {
-            margin: auto;
+            width: 65px;
+            height: 65px;
             border-radius: 100px;
+            margin-right: 10px;
         }
+
+        /* Kullanıcı adı ve kopyalama ikonunun yan yana olması */
+        .dc-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         #dc-nick {
-            margin: 3px auto;
             font-size: 20px;
         }
+
         #dc-nick-copy {
-            margin: 5px auto;
             cursor: pointer;
         }
 
@@ -108,11 +120,11 @@
     <iframe width="344" height="206" src="https://www.youtube.com/embed/-XDZw3v5T2U?autoplay=1" frameborder="0" allowfullscreen></iframe>
     <br>
     <div id="dc">
-        <img id="dc-pp" style="width: 65px; height: 65px;" src="wr4th.jpg" alt="Profil Fotoğrafı">
-    </div>
-    <div id="dc-nick">
-        <span id="copy-nick">wr4th0</span>
-        <img id="dc-nick-copy" onclick="copyEvent('copy-nick')" src="https://i.hizliresim.com/r2jxr9s.png" width="20px" height="20px" alt="Kopyala">
+        <img id="dc-pp" src="wr4th.jpg" alt="Profil Fotoğrafı">
+        <div class="dc-info">
+            <span id="dc-nick">wr4th0</span>
+            <img id="dc-nick-copy" onclick="copyEvent('dc-nick')" src="https://i.hizliresim.com/r2jxr9s.png" width="20px" height="20px" alt="Kopyala">
+        </div>
     </div>
     <br><br>
 
