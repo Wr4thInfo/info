@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4012359352062060"
+     crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wr4th Kimdir?</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <style>
+        /* Genel Stil Ayarları */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+            font-family: "Verdana", sans-serif;
+        }
+        
+        body {
+            background: #181818;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Profil Kartı */
+        .profile-card {
+            background: #242424;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 300px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .profile-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #555;
+        }
+
+        .username {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .copy-icon {
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .copy-icon:hover {
+            opacity: 0.7;
+        }
+
+        /* Başlık Stilleri */
+        h2, h3 {
+            margin-top: 20px;
+            color: #d8d8d8;
+        }
+
+        /* Açıklama Metni */
+        .bio {
+            max-width: 500px;
+            margin-top: 10px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Butonlar */
+        .btn {
+            display: block;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px;
+            border-radius: 25px;
+            background: #333;
+            color: white;
+            border: 2px solid #444;
+            width: 250px;
+            margin: 8px auto;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #444;
+            border-color: #555;
+        }
+
+        /* Video */
+        .video-container {
+            margin-top: 20px;
+        }
+
+    </style>
+
+    <script>
+        function copyEvent(id) {
+            var text = document.getElementById(id).textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Kopyalandı!");
+            }).catch(err => {
+                console.error('Kopyalama hatası:', err);
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Discord Profili -->
+    <div class="video-container">
+        <iframe width="344" height="206" src="https://www.youtube.com/embed/-XDZw3v5T2U?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <h2>Discord ve Telegram</h2>
+    <!-- Profil Kartı -->
+    <div class="profile-card">
+        <img src="wr4th.jpg" alt="Profil Fotoğrafı" class="profile-img">
+        <div>
+            <div class="username" id="copy-nick">wr4th0</div>
+        </div>
+        <img src="https://i.hizliresim.com/r2jxr9s.png" class="copy-icon" onclick="copyEvent('copy-nick')" alt="Kopyala">
+    </div>
+
+    <br>
+
+    <!-- Hakkında Bölümü -->
+    <h2>Wr4th Kimdir?</h2>
+    <br>
+    <p class="bio">
+        Merhaba! Ben Wr4th, nâmı diğer Alyx. <br> <br>
+        Turkish Guy Tim'in Kurucusuyum
+        TGT Forum adında bir forum sitem var.
+        Cyber Security alanında 4 yıl boyunca pentesterlik yaptım. <br> <br>
+        Programlama ve oyun geliştirme üzerine çalışıyorum.
+        Bildiğim kodlama dilleri: Python, C++, C#, HTML5, PHP, JS, CSS, LUA. <br> <br>
+        Wr4th Games adında bir oyun stüdyom var,
+        Roblox'da ve mobilde profesyonel oyun geliştiriyorum.
+        
+
+
+    </p>
+
+    <!-- Bağlantılar -->
+    <h3>Bağlantılar;</h3>
+    <a href="https://discord.com/channels/@me/1190656208273686609" class="btn">Discord (VPN)</a>
+    <a href="https://github.com/T5heAlyx" class="btn">Github</a>
+    <a href="https://www.instagram.com/thewr4th/" class="btn">Instagram</a>
+
+    <h3>Roblox Bağlantıları;</h3>
+    <a href="https://www.roblox.com/users/2421449140/profile" class="btn">Roblox Profilim (VPN)</a>
+    <a href="https://www.roblox.com/groups/15740139/Wr4th-Games#!/about" class="btn">Roblox Grubum (VPN)</a>
+    <a href="https://discord.gg/HMeQ2ctr4n" class="btn">Grup Discord Sunucum (VPN)</a>
+
+    <h3>TurkishGuyTim Bağlantıları;</h3>
+    <a href="https://www.turkishguy.rf.gd" class="btn">TGT Forum</a>
+
+    <h3>İletişim;</h3>
+    <p class="bio">E-Posta: Alyx01111000@protonmail.com</p>
+
+</body>
+</html>
